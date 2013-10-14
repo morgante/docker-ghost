@@ -42,7 +42,7 @@ Run the ghost-docker:
 
 Point your webbrowser to:
 
-<code>http://<serverip>:5000</code>
+<code>http://serverip:5000</code>
 
 # Adding your user to Ghost
 Follow the manual provided by Ghost, for further installation: http://docs.ghost.org/
