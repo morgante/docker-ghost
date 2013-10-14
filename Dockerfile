@@ -1,9 +1,10 @@
 # Install Ghost blogging platform and run development environment on port 5000
 #
-# VERSION 0.0.1
+# VERSION 0.0.2
 
-FROM base
+FROM ubuntu:12.10
 MAINTAINER Amer Grgic "amer@livebyt.es"
+WORKDIR /data/ghost
 
 # Install dependencies for nginx installation
 RUN apt-get install -y python g++ make software-properties-common
@@ -22,10 +23,10 @@ ADD ./ghost-0.3.2.zip /tmp/
 # Unzip Ghost zip to /data/ghost
 RUN unzip -uo /tmp/ghost-0.3.2.zip -d /data/ghost
 # Add custom config js to /data/ghost
-ADD ./config.example.js /data/ghost/
+ADD ./config.example.js /data/ghost/config.js
 # Install Ghost with NPM
 RUN cd /data/ghost/ && npm install --production
-# Port map port 5000 to 80 on local machine
-EXPOSE 5000:2368
+# Expose port 2368
+EXPOSE 2368
 # Run Ghost
-CMD cd /data/ghost && npm start
+CMD ["npm","start"]

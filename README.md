@@ -17,9 +17,13 @@ Run the ghost-docker:
 
 <code>sudo docker run -d livebytes/ghost</code>
 
+Find which port your instance is exposed to:
+
+<code>sudo docker port container-id 2368</code>
+
 Point your webbrowser to:
 
-<code>http://serverip:5000</code>
+<code>http://serverip:port</code>
 
 ## Option 2: Build the Docker image yourself
 Git clone the repository: 
@@ -40,9 +44,13 @@ Run the ghost-docker:
 
 <code>sudo docker run -d ghost</code>
 
+Find which port your instance is exposed to:
+
+<code>sudo docker port container-id 2368</code>
+
 Point your webbrowser to:
 
-<code>http://serverip:5000</code>
+<code>http://serverip:port</code>
 
 # Adding your user to Ghost
 Follow the manual provided by Ghost, for further installation: http://docs.ghost.org/
