@@ -16,8 +16,6 @@ RUN apt-get install -y unzip
 RUN apt-get install -y rlwrap
 RUN apt-get install -y nodejs 
 RUN curl https://npmjs.org/install.sh | sh
-# Make data-dir
-RUN mkdir /data/
 # Add Ghost zip to image
 ADD ./ghost-0.3.2.zip /tmp/
 # Unzip Ghost zip to /data/ghost
