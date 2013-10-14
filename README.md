@@ -19,7 +19,7 @@ Run the ghost-docker:
 
 Point your webbrowser to:
 
-<code>http://<serverip>:5000</code>
+<code>http://serverip:5000</code>
 
 ## Option 2: Build the Docker image yourself
 Git clone the repository: 
