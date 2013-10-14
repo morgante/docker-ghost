@@ -15,7 +15,7 @@ Pull the ghost-docker:
 
 Run the ghost-docker:
 
-<code>sudo docker run -d ghost</code>
+<code>sudo docker run -d livebytes/ghost</code>
 
 Point your webbrowser to:
 
