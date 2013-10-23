@@ -32,9 +32,9 @@ Git clone the repository:
 
 Install Docker using the Docker documentation that you can find here: https://www.docker.io/gettingstarted/
 
-Pull the base Docker:
+Pull the ubuntu Docker:
 
-<code>sudo docker pull base</code>
+<code>sudo docker pull ubuntu:12.10</code>
 
 Build the ghost-docker (execute command below in the folder you cloned the repository to):
 
