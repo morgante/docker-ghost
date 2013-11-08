@@ -6,7 +6,6 @@ I've changed the standard IP on which the Ghost dev environment runs to 0.0.0.0 
 
 # Running Docker-Ghost
 
-## Building the Docker image
 Git clone the repository: 
 
 <code>git clone git@github.com:livebytes/docker-ghost.git</code>
