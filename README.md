@@ -8,7 +8,7 @@ I've changed the standard IP on which the Ghost dev environment runs to 0.0.0.0 
 
 Git clone the repository: 
 
-<code>git clone git@github.com:livebytes/docker-ghost.git</code>
+<code>git clone https://github.com/livebytes/docker-ghost.git</code>
 
 Install Docker using the Docker documentation that you can find here: https://www.docker.io/gettingstarted/
 
