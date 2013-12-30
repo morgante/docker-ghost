@@ -1,5 +1,3 @@
-_Run the [Ghost](https://ghost.org/) blogging platform_
-
 # Quickstart
 
 [Install Docker](https://www.docker.io/gettingstarted/), then:
