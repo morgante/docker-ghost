@@ -24,6 +24,8 @@ RUN unzip -uo /tmp/ghost-0.3.2.zip -d /data/ghost
 ADD ./config.example.js /data/ghost/config.js
 # Install Ghost with NPM
 RUN cd /data/ghost/ && npm install --production
+# Volumes
+VOLUME ['/data/ghost/content/images', '/data/ghost/content/data']
 # Expose port 2368
 EXPOSE 2368
 # Run Ghost
