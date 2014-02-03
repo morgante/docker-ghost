@@ -6,7 +6,8 @@
 git clone https://github.com/livebytes/docker-ghost.git
 cd docker-ghost
 sudo docker build -t ghost .
-sudo docker run -d -p <host_port>:2368 ghost
+sudo docker run -v /data/ghost/content/images -v /data/ghost/content/data -name ghost-data ubuntu:12.10 /bin/sh
+sudo docker run -d -p <host_port>:2368 -volumes-from ghost-data ghost
 ```
 In a browser, open: `http://serverip:port`
 
