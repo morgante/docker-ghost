@@ -1,6 +1,6 @@
-# Install Ghost blogging platform and run development environment on port 5000
+# Install Ghost blogging platform and run development environment
 #
-# VERSION 0.0.2
+# VERSION 1.0.0
 
 FROM ubuntu:12.10
 MAINTAINER Amer Grgic "amer@livebyt.es"
